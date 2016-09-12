@@ -11,6 +11,9 @@
 - a sever somewhere - on the internet, tools to do this, we will use heroku.
 	- ‘in the cloud’ - I like to break down this phrase, since we hear it so frequently in society these days.
 
+### What is a URL
+If it fits, I have broken down what a URL is during this talk. Go to the googles for an example or pictograph. It comes up when we discuss the different between something on the internet and something running locally.
+
 ### What does deploy mean?
 - deploy means literally put it out on the internet where is it available to anyone.
 - https://www.heroku.com/ is one tool to do this. It is free for small apps, but even production code trusts heroku.
