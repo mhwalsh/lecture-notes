@@ -11,12 +11,12 @@ Remember back to Monday of last week...
 -----
 
 #### MongoDB
-https://docs.mongodb.com/manual/
+[https://docs.mongodb.com/manual/](https://docs.mongodb.com/manual/)
 
 No SQL means, no tables. Show a snippet of mongo document syntax. What does this remind you of?
 
-https://github.com/mulchy/prime_mongo_cli_00/blob/master/bios.js
-https://docs.mongodb.com/manual/core/document/
+[https://github.com/mulchy/prime_mongo_cli_00/blob/master/bios.js](https://github.com/mulchy/prime_mongo_cli_00/blob/master/bios.js)
+[https://docs.mongodb.com/manual/core/document/](https://docs.mongodb.com/manual/core/document/)
 
 * No tables
 * JSON like documents - BSON
@@ -90,7 +90,11 @@ connecting to: test
 ##### Admin Mongo
 UI/GUI tool for interacting with mongo db. It's a node project! Installation instructions:
 	
-https://github.com/mrvautin/adminMongo
+[https://github.com/mrvautin/adminMongo](https://github.com/mrvautin/adminMongo)
+
+##### RoboMongo
+
+[https://robomongo.org/download](https://robomongo.org/download)
 
 -----
 #### Basic CRUD
@@ -114,13 +118,22 @@ Note: doesn't show up until you store something into it.
 verb: insert
 
 ```
-> db.users.insert({username: "millie11", active:true, created: new Date(), name: {first: "millie", last: "walsh"}});
+> db.users.insert(
+	{
+		username: "millie11", 
+		active:true, 
+		created: new Date(), 
+		name: {first: "millie", last: "walsh"}
+	}
+);
 ```
 
 ```
 >  db.users.insert({username: "john7", active:true, created: new Date(), name: {first: "John"}});
 ```
-Note: not all parts of the document are required. No problem. Flexibility.
+Note: not all parts of the document are required. No problem. Flexibility. 
+
+Q: Could this be problematic?
 
 ##### Read
 verb: find
@@ -156,15 +169,43 @@ Subdocument:
 ##### Update
 verb: update
 
+Full object:
+
 ```
 > db.users.update({username: "john7"}, {username: "john7", active:true, created: new Date(), name: {first: "John", last: "Lundberg"}});
 ```
 
+
+$set and $currentDate
+
+```
+db.users.updateOne(
+	{"name.first":"millie"}, 
+		{
+			$set: {"favorites.food": "tomato"}, 
+			$currentDate: {lastModified: true}
+		}
+);
+```
+
+Upsert: If it doesn't exist create it.
+
+
 ##### Delete
-verb: remove
+verb: remove/deleteMany/deleteOne
+
+```
+db.users.deleteMany({});
+db.users.remove({});
+db.users.deleteOne({});
+```
 
 ```
 > db.users.remove({username: "milliUser"});
+```
+
+```
+> db.users.remove({"_id": ObjectId("57e2a9d87938dae4dcea00af")});
 ```
 
 #### More Finds
@@ -205,16 +246,32 @@ Other: $gt, $lt, $in, $elemMatch, $exists:
 > db.users.find({family :{$exists: true}});
 ```
 
+##### Drop Database
+
+DANGER - Must be in the db you want to drop. Use <dbname>
+
+```
+db.dropDatabase();
+```
+
 -----
 ##### Assignment
-
+In mongo shell (more sporadic):
+```
 pwd()
 
 load("./prime/nu/lecture/mongo/prime_mongo_cli_00/bios.js")
+```
+
+In terminal
+```
+mongoimport --db challenge --collection bios --drop --file bios.json
+```
 
 -----
 
 
 6/20/16 - Rewritten and organized for Nu
+9/21/16 - Modified for Pi
 	
 Heavily influenced by: https://docs.google.com/document/d/1yLDiF7zYvD7qj4CYnSpiEHnvxLKjuejvvWh4qW6cgQY/edit#heading=h.dbi5rzfy9l76 
