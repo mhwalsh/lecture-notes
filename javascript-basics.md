@@ -25,6 +25,24 @@
 Make the classic "Hello World" program. Scrub back through the video and follow along. Challenge: Append to the DOM.
 
 2. Variable
+	**What is a variable?** - *Variables are containers that you can store values in.* - MSDN
+	
+	**Example**: While talking through following points, so the creation of a variable, assignment, reassignment, and logging it out.
+	
+	**Declaration** - The key word *var* followed by the name of the container or variable.
+	
+	**Assign it** - Give it value, with the assignment operator = followed by the value you want the container to hold.
+	
+	**Reassign it**
+	
+	**Example**: Let's change our Hello World from Tau to a specific person. First we could 'hard code' this (meaning a string of the name we want), but this doesn't really solve our problem because now instead of saying Tau every time it says Fred. We want that portion to be variable based on the user input. Simple way to get user input is the prompt method.
+	
+	**Why use a variable?** - The reassignment is important. This gives use the ability to make functionality that is generalized and can preform the same tasks on different input (variables). 
+	
+	#### Try it! 
+	Modify the code you wrote after the 'Hello World' video to take user input and console log the value.
+	
+	
 3. Data Types: Strings, Numbers, Boolean
 4. Loops: While and For
 5. Arrays
