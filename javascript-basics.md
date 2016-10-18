@@ -42,10 +42,55 @@ Make the classic "Hello World" program. Scrub back through the video and follow 
 	#### Try it! 
 	Modify the code you wrote after the 'Hello World' video to take user input and console log the value.
 	
-	
-3. Data Types: Strings, Numbers, Boolean
-4. Loops: While and For
-5. Arrays
-6. Objects
-7. Functions
-8. Computer Lit - This lives in another doc, but a video about this. 
+3. Arrays
+An array - is way to store repeated data in one variable. A list of things that you would group together. 
+
+We will look at examples of these in a minute. Some things could be: Cars, feelings, names, word, ages, etc.
+
+**What is the syntax?**
+square brackets [] with comma separated values inside. You can assign this to a variable. 
+
+// Declare an empty array
+var myArr = [];
+
+//Or initiate it with values
+var myArr = [1, 2, 3, 5];
+
+//Try some different data types: Cars, feelings, names, from above.
+
+**Keep types consistent**
+Keep the datatypes inside the array consistent. JavaScript doesn't require this, but it is good practice.  WHY?
+// Mix value types. 
+var myMix = [1, "string"];
+
+// You can instantiate the array values using variables.
+var name1 = "Millie";
+var name2 = "Dev";
+var name3 = "Huck";
+var myArr = [name1, name2, name3];
+log this...
+storing the variable of the value of it
+
+**Index**
+How do you get at the elements. Index into them.
+- sub/of 
+- arr[0]
+- console.log these
+- count from zero
+
+**Methods**
+You can operate on arrays using special **builtin** methods and properties. 
+
+- ```.length```
+- ```.push()```
+- More resources here: [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Methods)
+
+**loops**
+Pairs nicely with a for loop. To **iterate** over all your data stored in the array.
+
+```
+for(var i = 0; arr.length; i++) {
+	console.log(fruits[i]); // what happens if this isn't variable?
+}
+```
+

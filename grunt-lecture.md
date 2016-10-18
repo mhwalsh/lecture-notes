@@ -2,10 +2,10 @@
 
 #### References:
 
-- [http://gruntjs.com/]()
-- [http://gruntjs.com/plugins]()
-- [https://www.youtube.com/watch?v=XJ5F-Auhato&list=PLoYCgNOIyGAB0_YBfdNP5oqAD98HtAQqL&index=7]()
-- [https://www.youtube.com/watch?v=TMKj0BxzVgw&list=PLoYCgNOIyGAB0_YBfdNP5oqAD98HtAQqL&index=8]()
+- [http://gruntjs.com/](http://gruntjs.com/)
+- [http://gruntjs.com/plugins](http://gruntjs.com/plugins)
+- [https://www.youtube.com/watch?v=XJ5F-Auhato&list=PLoYCgNOIyGAB0_YBfdNP5oqAD98HtAQqL&index=7](https://www.youtube.com/watch?v=XJ5F-Auhato&list=PLoYCgNOIyGAB0_YBfdNP5oqAD98HtAQqL&index=7)
+- [https://www.youtube.com/watch?v=TMKj0BxzVgw&list=PLoYCgNOIyGAB0_YBfdNP5oqAD98HtAQqL&index=8](https://www.youtube.com/watch?v=TMKj0BxzVgw&list=PLoYCgNOIyGAB0_YBfdNP5oqAD98HtAQqL&index=8)
 
 
 #### Why you need a build system?
@@ -33,7 +33,7 @@
 #### Joel's tool
 This will copy a template to start out with into every project you run it in. So you don't have to start from scratch with your grunt file.
 
-[https://github.com/joeltmiller/grunt-init-gruntfile]()
+[https://github.com/joeltmiller/grunt-init-gruntfile](https://github.com/joeltmiller/grunt-init-gruntfile)
 
 #### Project specific
 ```
