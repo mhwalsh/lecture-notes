@@ -16,7 +16,6 @@ Theme: Try it outside of Code School. Write write write.
 - commit and push to git hub if there is time.
 
 ---
-
 ### Week 2
 Theme: Help each-other out! Continued write from last week.
 
@@ -74,6 +73,7 @@ Theme: Help each-other out! Continued write from last week.
 - Objects
 	-  When to use them?
 	-  How are they different from an array
+
 ---
 ### Week 6
 #### Announcements 
