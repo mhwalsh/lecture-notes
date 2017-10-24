@@ -213,7 +213,7 @@ Update user to show more ways BSON can be structured.
 Other: $gt, $lt, $in, $elemMatch, $exists:
 
 ```
-> db.users.update({username:"millie11"}, {username: "millie11", active:true, created: new Date(), name: {first: "millie", last: "walsh"}, age: 27, scores: [34, 67, 89], favorites: {food: "tomato", artist: "Picasso" },  family:[{rel: "father", name:"Richard", age: 60}, {rel: "sister", name: "Amy", age: 25}]});
+> db.users.update({username:"millie11"}, {username: "millie11", active:true, created: new Date(), name: {first: "millie", last: "walsh"}, numberPets: 0, scores: [34, 67, 89], favorites: {food: "tomato", artist: "Picasso" },  family:[{rel: "father", name:"Richard", age: 60}, {rel: "sister", name: "Amy", age: 25}]});
 ```
 
 #####$and $or
